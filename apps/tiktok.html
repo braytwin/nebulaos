@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NebulaOS - TikTok</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .phone-frame {
+    width: 360px;
+    height: 740px;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, #000, #111);
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    overflow: hidden;
+    position: relative;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .title-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8cdeff;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+
+<div class="phone-frame">
+  <div class="title-bar">TikTok</div>
+  <iframe id="tiktok-frame" src="about:blank"></iframe>
+</div>
+
+<!-- Scramjet -->
+<script src="/scram/scramjet.all.js"></script>
+<script>
+  const { ScramjetController } = $scramjetLoadController();
+  const scramjet = new ScramjetController({
+    files: {
+      wasm: "/scram/scramjet.wasm.wasm",
+      all: "/scram/scramjet.all.js",
+      sync: "/scram/scramjet.sync.js",
+    }
+  });
+
+  scramjet.init();
+
+  // Register service worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("/sw.js")
+      .then(() => console.log("Scramjet service worker registered"))
+      .catch(err => console.error("SW registration failed:", err));
+  }
+
+  // Load TikTok page through Scramjet proxy
+  scramjet.addProxy({
+    match: url => url.includes("tiktok.com"),
+    url: "https://www.tiktok.com",
+    iframe: document.getElementById("tiktok-frame")
+  });
+</script>
+
+</body>
+</html>
