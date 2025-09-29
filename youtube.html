@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NebulaOS - YouTube Test</title>
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .phone-frame {
+      width: 375px;
+      height: 812px;
+      background: linear-gradient(180deg, #000, #111);
+      border-radius: 40px;
+      box-shadow: 0 0 50px rgba(0,0,0,0.5);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-bar {
+      height: 40px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 10px;
+      color: #8cdeff;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .iframe-container {
+      flex: 1;
+      background: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="phone-frame">
+    <div class="top-bar">
+      <i class="fas fa-signal"></i>
+      <i class="fas fa-wifi" style="margin-left:8px;"></i>
+      <i class="fas fa-battery-full" style="margin-left:8px;"></i>
+    </div>
+    <div class="iframe-container">
+      <!-- Scramjet proxy link -->
+      <iframe src="/scram/https://www.youtube.com"></iframe>
+    </div>
+  </div>
+
+  <!-- Scramjet -->
+  <script src="/scram/scramjet.all.js"></script>
+  <script>
+    const { ScramjetController } = $scramjetLoadController();
+
+    const scramjet = new ScramjetController({
+      files: {
+        wasm: "/scram/scramjet.wasm.wasm",
+        all: "/scram/scramjet.all.js",
+        sync: "/scram/scramjet.sync.js",
+      }
+    });
+
+    scramjet.init();
+
+    navigator.serviceWorker.register("/sw.js")
+      .then(() => console.log("Scramjet service worker registered"))
+      .catch(err => console.error("SW registration failed:", err));
+  </script>
+
+</body>
+</html>
