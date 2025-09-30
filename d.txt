@@ -1,0 +1,112 @@
+🌌 NebulaOS – Concept & Design Requirements
+🎨 Visual Style
+
+Theme: Futuristic, clean, minimal, cosmic-inspired.
+
+Colors:
+
+Background: Black gradient
+
+Accents: Baby blue (#8cdeff / #54a5ff) + White highlights
+
+Typography: Inter Bold for titles + smooth sans-serif for UI text.
+
+Animations: Smooth transitions for hover, clicks, page changes.
+
+Background Effects:
+
+<script src="three.r134.min.js"></script>
+<script src="vanta.fog.min.js"></script>
+<script>
+VANTA.FOG({
+  el: "#your-element-selector",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x8cdeff,
+  midtoneColor: 0xffffff,
+  baseColor: 0x54a5ff,
+  blurFactor: 0.72,
+  speed: 3.70,
+  zoom: 0.80
+})
+</script>
+
+🏠 Homepage
+
+Main Hero Section:
+
+Big NebulaOS title in Inter Bold.
+
+Smooth fade-in + glow effect.
+
+Subtle fog particles background.
+
+Device Selection Menu:
+
+Options:
+
+iPhone
+
+Android
+
+Nokia (Coming Soon)
+
+Smooth animated button hover glow (baby blue).
+
+📱 Device Selection
+
+If iPhone → Choose between:
+
+iPhone 16
+
+iPhone 17 (with liquid transparent glass icons).
+
+If Android → Options like:
+
+Google Pixel
+
+Samsung Galaxy (etc).
+
+Each selection loads a phone frame with realistic screen + icons.
+
+📲 Phone Simulation
+
+Realistic Home Screen:
+
+Rounded app icons with gloss/transparent effects.
+
+Dock at the bottom (Phone, Messages, Browser, Settings).
+
+Smooth app open/close animations.
+
+Core Apps (with functional or embedded versions):
+
+Messages – usernames = phone numbers, DM + Group Chat support.
+
+App Store – install simulated apps.
+
+Notes – use QuickNote.io
+.
+
+Calendar – embed Google Calendar
+.
+
+Weather – embed Weather.com
+.
+
+Settings – toggle themes, wallpapers, etc.
+
+✨ Extra Features to Add Later
+
+Lock Screen with time/date, swipe to unlock.
+
+Notifications – fake text popups, battery, WiFi, signal icons.
+
+Custom Wallpapers – allow user upload or presets.
+
+Drag & Drop App Reorder – mimic real phone UX.
+
+Persistent Data – use localStorage so apps, messages, and installs save between sessions.
