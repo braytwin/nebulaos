@@ -20,3 +20,56 @@ Here are the needs and wants I want on NebulaOS
 - The website will have a homepage saying what the website is, the plan, and other stuff. There is a button labeled "Explore," which takes you to a page where you can select the model of the phone you want to simulate for the VM. It features the iPhone button (with Font Awesome Icons), followed by the Android and Nokia logos, and then the models. 
 - The features on the website are that it runs on the Scramjet Proxy in the /scram folder in /scram/scramjet.all.js or something with the sw.js and stuff, and it proxies the link for whatever app/game you are doing. If you are running on the Google Pixel model and you use Notepad, it will proxyfy the link for https://keep.google.com/ and do the /scram link for it. I don't know how to do that, so could you explain? The apps always have proxied links and such.
 - The phone the user selected will match the phone they did. And there is on the Github Repo a folder for /phones/(AnyModel)iphone/iphone16/ or whatever they did, then that frames into the phone model or the shape of that phone.
+
+ׂ╰┈➤ PHONE APPS 
+(These will be cloned into their own code but look the same as the iPhone Version.)
+- iPhone
+Notes, Calendar, Weather, iCloud, App Store, Find My, Maps, Camera, Files, Calculator, Voice Memos, Home, Clock, Safari, FaceTime, Messages, Phone, Settings, Contacts, Apple Music.
+- Android (Google Pixel)
+Google Notes, Google Calendar, Google Weather, Google Chrome, Play Store, Google Maps, Camera, Files, Calculator, Google Memos, Clock, Gemini, Messages, Phone, Settings, Contacts.
+- Android (Samsung Galaxy)
+Phone, Messages, Clock, Gallery, Camera, Settings, Contacts, Galaxy Store, Calendar, Weather, Browser, Maps, Files, Calculator, Voice Memos. 
+- Nokia
+Phone, Alarms, Camera, Gallery, Contacts, Messaging, Music, Internet, Store, WhatsApp, Twitter, Calendar, Notes, Settings, Calculator, Files, 
+- App Store (For Any Model or Phone)
+
+TikTok: https://tiktok.com
+Instagram: https://instagram.com
+Facebook: https://facebook.com
+WhatsApp: https://whatsapp.com
+YouTube: https://youtube.com
+Snapchat: https://snapchat.com
+X (formerly Twitter): https://x.com
+Telegram: https://telegram.org
+Tinder: https://tinder.com
+Netflix: https://netflix.com
+Disney+: https://disneyplus.com
+Spotify: https://spotify.com
+Pinterest: https://pinterest.com
+Amazon: https://amazon.com
+CapCut: https://www.capcut.com
+Uber: https://uber.com
+LinkedIn: https://linkedin.com
+Discord: https://discord.com
+Venmo: https://venmo.com
+Shazam: https://www.shazam.com
+DoorDash: https://doordash.com
+Signal: https://signal.org
+Subway Surfers: https://www.sybogames.com/subway-surfers
+Candy Crush Saga: https://www.king.com/game/candycrush
+PUBG Mobile: https://www.pubgmobile.com
+Free Fire: https://ff.garena.com
+Clash of Clans: https://supercell.com/en/games/clashofclans
+Honor of Kings: https://www.honorkings.com
+Pokémon GO: https://pokemongolive.com
+Minecraft: https://www.minecraft.net
+Roblox: https://www.roblox.com
+Genshin Impact: https://genshin.mihoyo.com
+Temple Run: https://imangistudios.com/temple-run
+Among Us: https://www.innersloth.com/games/among-us
+Angry Birds: https://www.angrybirds.com
+Fruit Ninja: https://www.fruitninja.com
+Call of Duty: Mobile: https://www.callofduty.com/mobile
+Homescapes: https://www.playrix.com/en/games/homescapes
+Monster Strike: https://us.monster-strike.com
+
