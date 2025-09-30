@@ -1,0 +1,21 @@
+NebulaOS
+-----------
+The first PhoneVM on the Laptop!
+Here are the needs and wants I want on NebulaOS
+
+ׂ╰┈➤ THEME
+
+- The theme is a black and dark grey gradient website with some hints of white in the color.
+- The particles are smooth to the right, moving white particles.
+- The font of the website is League Spartan for the big titles, and Inter Bold for the small texts.
+- The main colors are Black, White, and Baby Blue.
+- There are smooth animations for everything, smooth effects, and gradient colors.
+- The icons are not emojis. They are white "Font Awesome" Icons and not slanted.
+
+-----------------------------------------------------------------------------------------------------
+
+ׂ╰┈➤ WHAT THE WEBSITE IS
+
+- The website is a Virtual Machine for these phones: iPhone, Android, and Nokia. (iPhone 16/17 (With liquid glass) + Google Pixel, Samsung Galaxy (For Android), and any Nokia.)
+- The website will have a homepage saying what the website is, the plan, and other stuff. There is a button labeled "Explore," which takes you to a page where you can select the model of the phone you want to simulate for the VM. It features the iPhone button (with Font Awesome Icons), followed by the Android and Nokia logos, and then the models. 
+- The phone the user selected will match the phone they did. And there is on the Github Repo a folder for /phones/(AnyModel)iphone/iphone16/ or whatever they did, then that frames into the phone model or the shape of that phone.
